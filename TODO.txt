@@ -1,0 +1,52 @@
+
+
+Data Parsing:
+- Implement persistence layer to interact with data stores
+- Implement data store creation via various means
+    - JSON
+    - Serialization (ProtoBuffer)
+    - Database (JPA)
+
+
+Models:
+- Implement functionality to go from species -> form -> individual
+- Figure out better name for individual mon
+- Figure out move model (charged vs fast)
+    - Also figure out if "charge" or "charged"
+- Implement builders for models
+
+Maths:
+- Implement type effectiveness math
+- Implement stat to CP math
+- Implement "actual stats" calculator: Factors in stuff like
+
+Field:
+- Implement proper area differences
+    - Weather
+    - Mega/primal boosts
+    - Friend bonuses
+    - Party bonuses
+
+Code Standards:
+- Checkstyle
+- Linting
+- Docs/javadoc
+- README
+- Changelog
+- Figure out publishing repo to be importable for others
+- Check out other Maven plugin functionality: https://maven.apache.org/plugins/
+- Pull request templates
+- Make main branch protected
+- Tests
+
+General:
+- Refactor mega evolutions to be "temporary evolutions" in general. Will help with eventual Z-moves and such
+- Implement shadow pokemon
+- Some form of API/client to do basic calls on this?
+- Python version as well?
+- Docker/env of some sort?
+- Logging and better error handling
+- Core functions:
+    - toString
+    - equals
+    - hash

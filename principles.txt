@@ -1,0 +1,16 @@
+- Final user high-level library should be simple to use
+- UI for pokemon without forms shouldn't have to interact with multiple options operations if not needed
+    - Multiple forms, multiple evolutions, multiple megas, multiple preevolutions
+    - Validation should exist to ensure no issues here
+- Proper validation of read-in data, but overrideable if desired by user
+    - E.g. IVs limited to 0-15 ints
+- Default logic wherever possible
+- No reinventing the wheel: Implement reusable basic structures where possible
+    - Default strategies for battles
+    - Defaults for each PVP league
+    - Average out simulations based on move options if no movesets are specified
+    - Default levels/stats/etc for different battle types
+- Proper abstraction:
+    - Pokemon mappers should not care about underlying data structures
+    - Simulators should not care about math on how stats work
+    - Stat math should not care about specific pokemon
